@@ -38,7 +38,7 @@
         }
 
         .header-text {
-            font-size: 12px; /* Taille de police uniforme pour les deux côtés */
+            font-size: 8px; /* Taille de police uniforme pour les deux côtés */
             margin: 0; /* Supprime les marges par défaut */
         }
 
@@ -53,7 +53,7 @@
         }
         .station-image {
             width: 100%; /* S'étend sur toute la largeur de l'écran */
-            height: 75px; /* Définit une hauteur fixe de 75 pixels */
+            height: 55px; /* Définit une hauteur fixe de 75 pixels */
             object-fit: cover; /* Rognage pour conserver les proportions */
             display: block;
         }
@@ -69,26 +69,28 @@
             background-color: white;
             border: 1px solid #cccccc;
             border-radius: 10px;
-            height: 50pt;
+            height: 40pt;
             display: flex;
             align-items: center;
-            padding: 7px; /* Réduit le padding à 5px */
-            margin: 5px; /* Réduit la marge à 5px */
-            justify-content: center; /* Centre le contenu horizontalement */
-            text-align: center; /* Centre le texte à l'intérieur */
+            padding: 7px;
+            margin: 0; /* Supprime les marges autour de la boîte */
+            text-align: center;
         }
+
         .info-container img {
-            width: auto; /* Ajuste automatiquement la largeur */
-            height: 75px; /* Définit la hauteur à 75 pixels */
-            object-fit: cover; /* Rognage pour conserver les proportions */
-            margin-right: 10px; /* Réduit l'espace entre l'image et le texte */
+            width: 50px; /* Fixe la largeur à 50 pixels pour mieux contrôler la taille */
+            height: auto; /* Ajuste automatiquement la hauteur */
+            object-fit: cover; /* Conserve les proportions */
+            margin-right: 20px; /* Ajoute un petit espace entre l'image et le texte */
         }
+
         .info-container p {
-            margin: 0;
-            font-size: 20px; /* Taille de la police */
+            margin: 0; /* Supprime les marges par défaut */
+            font-size: 12px; /* Taille de la police */
             color: #333;
             font-family: 'Segoe UI', sans-serif; /* Utiliser la police Segoe UI */
         }
+
     </style>
 </head>
 <body>
@@ -97,7 +99,7 @@
             <p class="header-text">Rue de la Digue, 25 B-4420 Saint-Nicolas - Belgique</p>
         </div>
         <div class="header-right">
-            <p class="header-text">+32 (0)4 234 96 96 &nbsp;&nbsp;&nbsp; aide@aide.be</p>
+            <p class="header-text">aide@aide.be</p>
         </div>
     </div>
 
