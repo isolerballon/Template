@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #008eb7; /* Couleur modifiée */
+            color: white;
+            padding: 0 10px;
+            height: 25pt;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .header-left {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .header-text {
+            font-size: 12px; /* Taille de police uniforme pour les deux côtés */
+            margin: 0; /* Supprime les marges par défaut */
+        }
+
+        .content {
+            text-align: center;
+            padding: 7px; /* Réduit le padding à 5px */
+        }
+        .logo {
+            display: block;
+            margin: 5px auto; /* Réduit la marge à 5px */
+            width: 150px;
+        }
+        .station-image {
+            width: 100%; /* S'étend sur toute la largeur de l'écran */
+            height: 75px; /* Définit une hauteur fixe de 75 pixels */
+            object-fit: cover; /* Rognage pour conserver les proportions */
+            display: block;
+        }
+
+        .title {
+            background-color: #88C9F2;
+            padding: 7px; /* Réduit le padding à 5px */
+            border-radius: 5px;
+            color: #333;
+            display: inline-block;
+        }
+        .info-container {
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            height: 50pt;
+            display: flex;
+            align-items: center;
+            padding: 7px; /* Réduit le padding à 5px */
+            margin: 5px; /* Réduit la marge à 5px */
+            justify-content: center; /* Centre le contenu horizontalement */
+            text-align: center; /* Centre le texte à l'intérieur */
+        }
+        .info-container img {
+            width: auto; /* Ajuste automatiquement la largeur */
+            height: 75px; /* Définit la hauteur à 75 pixels */
+            object-fit: cover; /* Rognage pour conserver les proportions */
+            margin-right: 10px; /* Réduit l'espace entre l'image et le texte */
+        }
+        .info-container p {
+            margin: 0;
+            font-size: 20px; /* Taille de la police */
+            color: #333;
+            font-family: 'Segoe UI', sans-serif; /* Utiliser la police Segoe UI */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <p class="header-text">Rue de la Digue, 25 B-4420 Saint-Nicolas - Belgique</p>
+        </div>
+        <div class="header-right">
+            <p class="header-text">+32 (0)4 234 96 96 &nbsp;&nbsp;&nbsp; aide@aide.be</p>
+        </div>
+    </div>
+
+    <!-- Nouveau cadre sous l'entête -->
+    <div class="info-container">
+        <a href="https://www.aide.be" target="_blank"> <!-- Lien qui ouvre www.aide.be dans un nouvel onglet -->
+            <img src="https://drive.google.com/thumbnail?id=11o9CDr-nMBnwjgFVlSYCvxM3p-vo1k13&sz=w1000" alt="AIDE Logo">
+        </a>
+        <p>Association intercommunale pour le démergement<br>et l'épuration des communes de la province de Liège</p>
+    </div>
+
+    <div class="content">
+        <img src="https://drive.google.com/thumbnail?id=1Nq2bf8korEomxjniFaid4EFyKyO9hqE0&sz=w1000" alt="Station d'épuration" class="station-image">
+    </div>
+</body>
+</html>
